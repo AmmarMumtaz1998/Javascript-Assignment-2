@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 2</title>
+</head>
+<body>
+    <script>
+        //////////////////////////////////////////////////////////////////////////      Done
+        Conditions
+        alert("Javascript Condition.");
+        // Q#1
+
+        var a = prompt("Enter first number");
+        var b = prompt("Enter second number");
+
+        if(a>b){
+            alert('First Number is greater than Second One.');
+        }else{
+            alert('Second Number is greater than First One.');
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#2
+
+        var a = prompt("Enter first number");
+        var b = prompt("Enter second number");
+        var c = prompt("Enter third number");
+
+        if(a>b && a>c){
+            alert('First Number is greater than all.');
+        }else if(b>a && b>c){
+            alert('Second Number is greater than all.');
+        }else if(c>a && c>b){
+            alert('Third Number is greater than all.');
+        }else if(a==b && a==c || b==a && b==c || c==a && c==b){
+            alert("All numbers are equal.");
+        }else{
+            alert('Enter a valid Number.');
+        }
+
+        
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#3
+
+        var a = prompt("Enter a number.");
+
+        if( a > 0){
+            alert('Your Number is Positive.')
+        }else if( a < 0){
+            alert('Your Number is Negative.');
+        }else{
+            alert('Your number is neither Positive nor Negative. It is Zero[0].');
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#4
+
+        var a = prompt('Enter a number');
+        a = parseInt(a);
+
+        if((a % 5 == 0) && (a % 11 == 0)){
+            alert('Your number is a divisible of 5 and 11.');
+        }else{
+            alert("Your number is not a divisble of 5 and 11.");
+        }
+
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#5
+
+        var a = prompt("Enter a Number.");
+        a = parseInt(a);
+
+        if( a % 2 == 0 ){
+            alert('Your Number is Even.');
+        }else{
+            alert('Your Number is Odd.');
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#6
+
+        var a = prompt('Enter the Days of February.');
+        a = parseInt(a);
+
+        if( a == 29 ){
+            alert('"Oh yeah", It is a Leap Year.');
+        }else if( a < 28 ){
+            alert('First You need to learn about The days in each Month');
+        }else if( a > 29 ){
+            alert('First You need to learn about The days in each Month');
+        }else{
+            alert('It is not a Leap Year.');
+        }
+
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#7
+
+        var entry = prompt("Enter a Number or an Alphabet.");
+        var num;
+        num = parseInt(entry);
+        var alph = "";
+        alph = entry.toString();
+
+        if( entry == num ){
+            alert('Your Entry is a Number.');
+        }else if( entry == alph ){
+            alert('Your Entry is an Alphabet.')
+        }else{
+            alert('Please enter a Number Or an Alphabet')
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////   Done
+        // Q#8
+
+        var t = prompt("Enter any alphabet.");
+
+        if( t == 'a' ){
+            alert('It is a Vowel.');
+        }else if( t == 'e' ){
+            alert('It is a Vowel.');
+        }else if( t == 'i' ){
+            alert('It is a Vowel.');
+        }else if( t == 'o' ){
+            alert('It is a Vowel.');
+        }else if( t == 'u' ){
+            alert('It is a Vowel.');
+        }else{
+            alert('It is a Consonent.');
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////
+        // Q#9
+
+        var entry = prompt("Enter a Number, an Alphabet or a Special Character.");
+        var num;
+        num = parseInt(entry);
+        var alph = "";
+        alph = entry.toString();
+        var spec;
+        spec = entry.toString();
+
+        if( entry == num ){
+            alert('Your Entry is a Number.');
+        }else if( entry == alph ){
+            alert('Your Entry is an Alphabet.');
+        }else if( entry == spec ){
+            alert('Your Entry is a special Character.');
+        }else{
+            alert('Chal mera putt chutti kr.');
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        Strings
+        alert("Javascript Strings.");
+        // Q#1
+
+        var a = prompt("Enter any string.");
+        alert(a.length);
+
+
+         ////////////////////////////////////////////////////////////////////////      Done
+        // Q#2
+
+        var a = prompt("Enter a string");
+        alert(a);
+        var b = prompt("Enter another string");
+        alert(b);
+        a = b;
+        alert("To check answer Click Ok! After Copying a String Into another string");
+        alert(a);
+        
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#3
+
+        var a = prompt("Enter First Name");
+        var b = prompt("Enter Second Name");
+
+        var c = a + "" + b;
+        alert(c);
+
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#4
+
+        var a = prompt("Enter a String");
+        var b = prompt("Enter another String");
+        
+            var result = a.localeCompare(b);
+            alert(result);
+         
+        
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#5
+
+        var a = prompt("Enter a lowercase alphabetic string");
+        var b = a.toUpperCase();
+        alert(b);
+
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#6
+
+        var a = prompt("Enter a Uppercase Alphabetic String");
+        var b = a.toLowerCase();
+        alert(b);
+
+
+        //////////////////////////////////////////////////////////////////////////
+        // Q#7
+
+        var a = prompt("Enter a toggled string");
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];
+        
+        for(var x=0; x<a.length; x++)
+        {
+            if(UPPER.indexOf(a[x]) !== -1)
+            {
+            result.push(a[x].toLowerCase());
+            }
+            else if(LOWER.indexOf(a[x]) !== -1)
+            {
+            result.push(ar[x].toUpperCase());
+            }
+            else 
+            {
+            result.push(a[x]);
+            }
+            alert(result.join(''));
+        }
+
+        
+        /////////////////////////////////////////////////////////////////////
+        // Q#8
+
+        var str = prompt("Enter Any datatype.");
+        var newStr = alp = digit = splch = i = 0;
+
+        for(i = 0; i < str.length(); i++)
+            {
+            if(( str >= 'a' && str <= 'z' ) || ( str >= 'A' && str <= 'Z'))
+            {
+                alp++;
+            }
+            else if(str[i]>='0' && str[i]<='9')
+            {
+                digit++;
+            }
+            else
+            {
+                splch++;
+            }
+
+            i++;
+        }
+        alert(newStr);
+
+        ///////////////////////////////////////////////////////////////////////////      Done
+        // Q#9
+
+        function countVowel(str) { 
+        const count = str.match(/[aeiou]/gi).length;
+
+        return count;
+        }
+        const string = prompt('Enter a string: ');
+
+        const result = countVowel(string);
+
+        alert(result);
+
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        Arrays
+        alert("Arrays");
+        // Q#1
+
+        var arr = [1, 2, 3, 'Ammar', 'Mumtaz'];
+        alert(arr);
+
+        ////////////////////////////////////////////////////////////////////////      Done
+        // Q#2
+
+        var myArray = [4, -5, 0, 2, -67, 8, 10, -34 ];
+
+        function getNegativeNumbers(array) {
+
+            var negatives = [];
+
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    negatives.push(array[i]);
+                }
+            }
+            return negatives;
+
+            }
+            alert(getNegativeNumbers(myArray));
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#3
+
+        var arr = [1,2,3,4,5,6,7,8,9];
+        s = 0;
+        for (i = 0; i < arr.length; i += 1){
+        s += arr[i];
+        }
+        alert(s);
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        // Q#4
+
+
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        maths
+        alert("Math functions");
+        // Q#1
+
+        var average = 29.1524
+        alert(Math.round(average));
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        // Q#2
+
+        var average = 29.1524
+        alert(Math.ceil(average));
+
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        // Q#3
+
+        var average = 29.1524
+        alert(Math.floor(average));
+
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        Loops
+        alert("Loops");
+        // Q#1
+
+        i = 1;
+         for(i = 1; i <= 9; i++){
+             alert(i);
+         }
+
+
+        //////////////////////////////////////////////////////////////////////////        Done
+        Loops
+        // Q#2
+
+        i = 9;
+         for(i = 9; i >= 1; i--){
+             alert(i);
+         }
+
+
+        /////////////////////////////////////////////////////////////////////////
+        // Q#3
+
+        var arr = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+            for(i= 'A'; i<='Z'; i++){
+                document.write("All Alphabets", i);
+            }
+
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#4
+
+         i = 0;
+            for( i= 0; i<= 100; i+2){
+                alert(i);
+            }
+
+
+        /////////////////////////////////////////////////////////////////////////     Done
+        // Q#5
+
+            i = 1;
+            for( i= 1; i<= 100; i+2){
+                alert(i);
+            }
+
+        
+    </script>
+</body>
+</html>
